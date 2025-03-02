@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    max-width: 600px;
+    background-color: azure;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+    margin-top: 1rem;
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 2rem;
+}
+/* Container to hold the image and main content */
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* Content styling */
+.content {
+    margin-left: 20px; /* Space between the image and main content */
+}
+
+/* Image styling */
+#leftImage {
+    max-width: 1500px;
+    max-height: 1500px; /* Adjust the image size as needed */
+    
+    margin-top: 200px; /* Space between the image and main content */
+}
