@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+ </head>
+ <body style="background-image: url('{{url_for('static', filename='crop1.jpg')}}'); background-size: cover;">
+    <div style="text-align: left; color:aliceblue; font-size: 50px; font-family : 'Georgia'; margin-top: 150px; " >
+      <b><i> Fertilizer Recommendation  <br>
+            System for Disease Prediction </i></b>
+    </div>
+    <div style="text-align: left; color: aliceblue; margin-top: 100px; margin-left: 120px;">
+      <a href="{{ url_for('predict') }}"> <button style="font-size: 20px; font-family: 'Georgia'; text-decoration: none; color: green;" ><i> <b>KNOW YOUR CROP HEALTH </b> </i></button></a>
+    </div>
+   <div style="text-align: left; color: aliceblue; font-family:'Georgia' ; font-size: 25px; margin-top: 210px;">
+      <p>
+       <i>  Fertilizer Recommendation System is focused on developing a digital solution <br>
+         that provides personalized fertilizer recommendations to farmers.</i>
+      </p>
+   </div>
+ </body>
+ </html>
