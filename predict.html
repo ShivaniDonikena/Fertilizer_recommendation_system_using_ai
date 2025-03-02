@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <style>
+     body {
+         display: flex; 
+         justify-content: flex-start; /* Aligns the main section to the left */ 
+        }
+         main 
+        { 
+            margin-left: 180px; /* Adds some left margin to the main section */ 
+        }
+        </style>
+</head>
+<body>
+    <div id="navbar" style="margin-left: 1200px; padding: 20px;">
+        <a href="{{ url_for('home') }}" style="text-decoration: none;"><button>HOME</button></a>
+    </div>
+    <div class="container"> 
+        <img src="{{ url_for('static', filename='pre.jpg')}}" alt="Description of the image" id="leftImage">
+    <div class="content">
+    <header style=" margin-left: 300px; margin-top: 100px;">
+        <h1>CROP PREDICTION</h1>
+    </header>
+    <main>
+        <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+            <section>
+                <h2>Upload Image</h2>
+                <input type="file" name="image" accept="image/*" required>
+                <br><br>
+                <label>Select Plant Type:</label>
+                <select name="plant" required>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="fruit">Fruit</option>
+                </select>
+                <br><br>
+                <button type="submit">Predict Disease</button>
+            </section>
+        </form>
+
+        <section id="result">
+            <h2>Result</h2>
+            <p id="diseaseName">
+                {% if caution %}
+                    <strong>Predicted Disease Precaution:</strong> {{ caution }}
+                {% else %}
+                    No prediction yet. Upload an image.
+                {% endif %}
+            </p>
+        </section>
+    </main>
+    </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
+</body>
+</html>
