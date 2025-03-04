@@ -6,7 +6,7 @@ This project uses deep learning to recommend the best fertilizer based on soil q
 ✅ Built with Deep Learning (TensorFlow/keras)
 ✅ Web interface for user-friendly access
 
-Here’s an updated explanation incorporating **plant disease detection** using **CNNs (Convolutional Neural Networks)** in your **Fertilizer Recommendation System**:  
+Here’s an explanation incorporating **plant disease detection** using **CNNs (Convolutional Neural Networks)** in **Fertilizer Recommendation System**:  
 
 ---
 
